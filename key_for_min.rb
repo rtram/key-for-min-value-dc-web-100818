@@ -14,10 +14,9 @@ def key_for_min_value(name_hash)
         array.shift
       end
     end 
-    min_value = array[0]
+    array[0]
     name_hash.select do |key, value|
-      value == min_value
-      return key
+      value == array[0]
     end 
   else 
     return nil
