@@ -15,7 +15,7 @@ def key_for_min_value(name_hash)
   end 
   min_value = array[0]
   name_hash.select do |key, value|
-    if value == min_value
+    value == min_value
       key
     end
   end 
